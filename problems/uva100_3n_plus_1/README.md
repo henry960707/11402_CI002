@@ -6,7 +6,7 @@ https://zerojudge.tw/ShowProblem?problemid=c039
 **解題思路**：
 
 
-**遇到問題**：
+**遇到問題**:
 
 
 **程式碼**：
