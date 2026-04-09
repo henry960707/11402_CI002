@@ -10,6 +10,7 @@ https://zerojudge.tw/ShowProblem?problemid=c039
 
 
 **程式碼**：
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
