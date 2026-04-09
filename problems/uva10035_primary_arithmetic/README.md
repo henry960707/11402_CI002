@@ -14,6 +14,7 @@ https://zerojudge.tw/ShowProblem?problemid=c014
 **遇到問題與解決**：
 - 本題概念較簡單，順利一次通過
 - 未來會練習把程式碼寫得更簡潔優雅
+  
 **程式碼**：
 
 ```cpp
