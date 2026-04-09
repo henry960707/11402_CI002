@@ -4,16 +4,15 @@
 https://zerojudge.tw/ShowProblem?problemid=c039
 
 **解題思路**：
-- 經典 Collatz 猜想模擬題
-- 先將變數"較小、較大"的數(m M) 以及用來算最大的數列(max_length)設出來
-- 從最小的數字開始 算出其數列長度 和前一個數列的長度進行比較 若較大則放進max_length
-- 輸出maxlength結果
+- 經典 Collatz 猜想模擬題（3n+1 問題）
+- 給定區間 [a, b]，計算區間內每個數字走到 1 所需的步數（cycle length）
+- 找出區間內最大的步數後輸出
 
 
 **遇到問題**:
-- 嘗試用遞迴 但寫不出來
-- 改成用while(true) k == 1後break
-- 若有更好解法再補充
+- 一開始想用**遞迴**寫，但一直寫不出來（容易 stack overflow 或邏輯錯誤）
+- 後來改用 `while(true)` + `break` 的方式模擬循環，才成功跑出正確結果
+- 目前程式碼可以通過，但寫得比較直白，未來會繼續優化
 
 
 
