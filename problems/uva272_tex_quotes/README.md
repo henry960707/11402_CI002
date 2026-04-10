@@ -1,47 +1,43 @@
 # UVa 272 - Tex Quotes
 
 **題目連結**：  
-https://zerojudge.tw/ShowProblem?problemid=c007
+[ZeroJudge - c007](https://zerojudge.tw/ShowProblem?problemid=c007)
 
 **解題思路**：
-- 主程式前兩段程式碼用來提高效率
-- 用getline解決換行問題
-- bool check判斷當前句子是否被括起來
-
+- 將輸入文字中的雙引號 `"` 轉換成 TeX 格式的引號
+- 第一個 `"` 轉成 ```` (兩個反引號)
+- 之後的 `"` 輪流轉成 `''` (兩個單引號)
+- 使用 `getline` 處理多行輸入，並用 `bool` 變數記錄目前引號狀態
 
 **遇到問題與解決**：
-- 初次遇到題目嘗試創個大陣列包含所有的字(失敗)
-- 不知怎麼處理換行問題(使用getline)
-- 對getline語法稍顯不熟
+- 一開始不知道要怎麼處理多行輸入，後來使用 `getline(cin, str)` 解決
+- 初次嘗試用陣列存所有字元失敗，改用逐字元處理 + bool flag 來切換引號格式
+- 對 `getline` 和 EOF 處理較不熟悉，練習後已掌握
 
-  
 **程式碼**：
 
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() 
-{
-    cin.sync_with_stdio(0);
-    cin.tie(0);
+int main() {
     string str;
-    bool check = true;
-    while(getline(cin,str)){
-      for(int i = 0;i<str.length();++i){
-        if(str[i] == '"'){
-          if(check){
-            cout<<"``";
-            check = false;
-          }
-          else {
-            cout<<"''";
-            check = true;
-          }
+    bool check = true;  // true 代表下一個 " 要轉成 ``
+
+    while (getline(cin, str)) {
+        for (char c : str) {
+            if (c == '"') {
+                if (check) {
+                    cout << "``";
+                } else {
+                    cout << "''";
+                }
+                check = !check;
+            } else {
+                cout << c;
+            }
         }
-        else cout<<str[i];
-      }
-      cout<<"\n";
+        cout << endl;
     }
+    return 0;
 }
-```
