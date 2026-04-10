@@ -1,4 +1,4 @@
-# UVa 10035 - Primary Arithmetic
+# UVa 490 - Rotating Sentences
 
 **題目連結**：  
 
