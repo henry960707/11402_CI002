@@ -1,7 +1,7 @@
 # UVa 10370 - Above Average
 
 **題目連結**：  
-https://zerojudge.tw/ShowProblem?problemid=n768
+[Zero Judge - n768](https://zerojudge.tw/ShowProblem?problemid=n768)
 
 **解題思路**：
 - 計算全班的平均成績
