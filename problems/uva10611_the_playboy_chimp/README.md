@@ -2,7 +2,6 @@
 
 **題目連結**：  
 [ZeroJudge - The Playboy Chimp](https://onlinejudge.org/external/106/10611.pdf)
-（請自行替換正確連結）
 
 **解題思路**：
 - Lady 的身高已排序
