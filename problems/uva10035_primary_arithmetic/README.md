@@ -1,7 +1,7 @@
 # UVa 10035 - Primary Arithmetic
 
 **題目連結**：  
-[https://zerojudge.tw/ShowProblem?problemid=c014](https://zerojudge.tw/ShowProblem?problemid=c014)
+[ZeroJudge - c014](https://zerojudge.tw/ShowProblem?problemid=c014)
 
 **解題思路**：
 - 計算兩個大數相加時總共產生幾次進位（carry）
