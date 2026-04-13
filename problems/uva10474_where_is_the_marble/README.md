@@ -1,8 +1,7 @@
 # UVa 10474 - Where is the Marble?
 
 **題目連結**：  
-[ZeroJudge - Where is the Marble?](https://zerojudge.tw/ShowProblem?problemid=XXXX)  
-（請自行替換正確連結）
+[ZeroJudge - e541](https://zerojudge.tw/ShowProblem?problemid=e541) 
 
 **解題思路**：
 - 將所有大理石的數字**由小到大排序**
