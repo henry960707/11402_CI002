@@ -52,9 +52,8 @@ int main() {
             cout << cost << "\n";
         }
     }
+}
 ```
 **時間複雜度**：O(T × (N log N + M log M))
 
 **空間複雜度**：O(N + M)
-    return 0;
-}
